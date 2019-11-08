@@ -1,24 +1,38 @@
 body {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
-  background-image: url("../images/background1.jpg");
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: right;
   background-position: center;
-
 }
 
 .landing {
-  font-family: 'pacifico', cursive;
   text-align: center;
   padding: 50px;
-  padding-top: 400px;
+  padding-top: 330px;
   margin-top: 70px;
   color: aliceblue;
   font-size: 70px;
 }
 
+.landing h1, h2 {
+  font-family: 'pacifico', cursive;
+  text-align: center;
+  
+}
 .landing p {
   font-family: 'Reenie Beanie', cursive;
   font-size: 40px;
+}
+.landing li {
+  list-style: none;
+  color: rgb(170, 39, 16);
+  text-emphasis: none;
+  font-family: 'Reenie Beanie', cursive;
+
+}
+.landing li:hover {
+ font-family: 'Reenie Beanie', cursive;
+ text-emphasis: none;
+ color: red;
 }
