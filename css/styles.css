@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  background-image: url("../images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  background-position: center;
+
+}
+
+.landing {
+  font-family: 'pacifico', cursive;
+  text-align: center;
+  padding: 50px;
+  padding-top: 400px;
+  margin-top: 70px;
+  color: aliceblue;
+  font-size: 70px;
+}
+
+.landing p {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 40px;
+}
