@@ -24,15 +24,16 @@ body {
   font-family: 'Reenie Beanie', cursive;
   font-size: 40px;
 }
-.landing li {
+.landing a, li {
   list-style: none;
-  color: rgb(170, 39, 16);
+  color: blue;
   text-emphasis: none;
   font-family: 'Reenie Beanie', cursive;
 
 }
-.landing li:hover {
+.landing a:hover {
  font-family: 'Reenie Beanie', cursive;
  text-emphasis: none;
  color: red;
+ text-decoration: none;
 }
