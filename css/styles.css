@@ -24,10 +24,24 @@ body {
   font-family: 'Reenie Beanie', cursive;
   font-size: 50px;
 }
-.btn.group {
+
+.links p {
+
+}
+.links a {
+  text-emphasis: none;
+  border-style: solid;
+  margin-left: 40px;
+  color: white;
+  padding: 10px;
+}
+
+.links a:hover {
+  background-color: rgba(255, 255, 0, 0.322);
+  color: black;
   text-emphasis: none;
   text-decoration: none;
-}
+} 
 /*
 .landing a, li {
   list-style: none;
@@ -45,11 +59,16 @@ body {
 */
 .SocialMedia li {
   list-style: none;
-  margin: 10px 15px;
+  margin: 10px 15px; 
   display: inline-block;
   font-size: 20px;
   color: #ab9e9e;
-  transition: .5s;
-  text-align: center;
   padding: 15px 15px;
+  text-align: center;
+}
+
+
+.contactUs p {
+  color: #ab9e9e;
+  text-align: center;
 }
