@@ -61,7 +61,7 @@ $(document).ready(function () {
         console.log("No price");
     }
     let topping_value = ptopping.length * 50;
-    console.log("toppins value" + topping_value);
+    console.log("toppings value" + topping_value);
 
     if ((psize == "0") && (pcrust == "0")) {
       console.log("nothing selected");
@@ -118,13 +118,13 @@ $(document).ready(function () {
         case "0":
           crust_price = 0;
           break;
-        case "ri":
+        case "Crispy":
           crust_price = 200;
           break;
-        case "Double dough":
+        case "Stuffed":
           crust_price = 300;
           break;
-        case "Cheese":
+        case "Gluten Free":
           crust_price = 400;
           break;
         default:
@@ -152,8 +152,8 @@ $(document).ready(function () {
       $("button.addPizza").hide();
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
-      console.log("Your total bills is sh. " + checkoutTotal);
-      $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
+      console.log("Your total bills is Ksh. " + checkoutTotal);
+      $("#pizzatotal").append("Your bill is Ksh. " + checkoutTotal);
     });
 
     // home delivery button
