@@ -26,7 +26,8 @@ body {
 }
 
 .links p {
-
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 50px;
 }
 .links a {
   text-emphasis: none;
@@ -42,22 +43,6 @@ body {
   text-emphasis: none;
   text-decoration: none;
 } 
-/*
-.landing a, li {
-  list-style: none;
-  color: blue;
-  text-emphasis: none;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 40px;
-}
-.landing a:hover {
- font-family: 'Gloria Hallelujah', cursive;
- text-emphasis: none;
- color: red;
- text-decoration: none;
-}
-*/
-
 .contactUs p {
   color: #e8e6eef6;
   text-align: center;
