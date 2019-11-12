@@ -2,7 +2,7 @@ body {
   background-color: rgba(0, 0, 0, 0.63);
   font-family: 'pacifico', cursive;
   text-align: left;
-  background-image: url(/images/leaves.png);
+  background-image: url(../images/leaves.png);
   background-repeat: no-repeat;
   background-position: right;
 }

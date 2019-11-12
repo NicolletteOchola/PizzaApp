@@ -1,4 +1,5 @@
-//frontend logic
+//*********************BUSINESS LOGIC******************************//
+
 var price, crust_price, topping_price;
 let total = 0;
 function Getpizza(name, size, crust, topping, total) {
@@ -9,13 +10,12 @@ function Getpizza(name, size, crust, topping, total) {
   this.total = total;
 }
 
-// proceed button
 $(document).ready(function () {
-  $("button.proceed").click(function () {
-    $("button.proceed").hide();
-    $("#information").hide();
-    $("div.choice").slideDown(1000);
-  });
+  // $("button.proceed").click(function () {
+  //   $("button.proceed").hide();
+  //   $("#information").hide();
+  //   $("div.choice").slideDown(1000);
+  // });
   $("button.proceed").click(function (event) {
     let pname = $(".name option:selected").val();
     let psize = $("#size option:selected").val();
@@ -86,7 +86,8 @@ $(document).ready(function () {
     $("#pizzacrust").html($("#crust option:selected").val());
     $("#pizzatopping").html(ptopping.join(", "));
     $("#totals").html(total);
-    // Add pizza button
+
+    
     $("button.addPizza").click(function () {
       let pname = $(".name option:selected").val();
       let psize = $("#size option:selected").val();
@@ -96,6 +97,7 @@ $(document).ready(function () {
         ptopping.push($(this).val());
       });
       console.log(ptopping.join(", "));
+
       switch (psize) {
         case "0":
           price = 0;
@@ -137,16 +139,15 @@ $(document).ready(function () {
 
       checkoutTotal = checkoutTotal + total;
       console.log(checkoutTotal);
-      // constractor function
+      
       var newOrder = new Getpizza(pname, psize, pcrust, ptopping, total);
 
       $("#ordersmade").append('<tr><td id="pizzaname">' + newOrder.name + '</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">' + newOrder.crust + '</td><td id="pizzatopping">' + newOrder.topping + '</td><td id="totals">' + newOrder.total + '</td></tr>');
       console.log(newOrder);
-
-
-
     });
-    // Checkout button
+
+    //***********************USER INTERFACE**********************//
+    
     $("button#checkout").click(function () {
       $("button#checkout").hide();
       $("button.addPizza").hide();
@@ -155,8 +156,6 @@ $(document).ready(function () {
       console.log("Your total bills is Ksh. " + checkoutTotal);
       $("#pizzatotal").append("Your bill is Ksh. " + checkoutTotal);
     });
-
-    // home delivery button
     $("button.deliver").click(function () {
       $(".pizzatable").hide();
       $(".choice h2").hide();
@@ -168,8 +167,6 @@ $(document).ready(function () {
       console.log("You will pay sh. " + deliceryamount + " on delivery");
       $("#totalbill").append("Your bill plus delivery fee is: " + deliveryamount);
     });
-
-    // when one clicks place order button
     $("button#final-order").click(function (event) {
       event.preventDefault();
 
@@ -184,7 +181,7 @@ $(document).ready(function () {
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount + " Thank you for choosing Muy Bien Pizza!");
+        $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Your total bill is Ksh. " + deliveryamount + " Thank you for choosing Muy Bien Pizza!");
         $("#totalbill").hide();
         $("#finalmessage").slideDown(1200);
       }

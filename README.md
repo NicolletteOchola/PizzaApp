@@ -27,9 +27,10 @@ Select a delivery option if it's the users preference to have the pizza delivere
 - Output :
 Have a summmary of the order and the total price to be paid
 ## KNOWN BUGS 
+The User can only order one Pizza at a time, when the add pizza option is selected, the page reloads.
 At the moment theres no known bugs, please feel free tolet me know if you find any.
 ## LINK TO LIVE SITE 
-https://nicolletteochola.github.io/DelaniStudio/
+https://nicolletteochola.github.io/PizzaApp/
 
 ## CONTACT DETAILS
 - email: nicoleochola@gmail.com
