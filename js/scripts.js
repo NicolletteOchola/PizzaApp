@@ -11,11 +11,11 @@ function Getpizza(name, size, crust, topping, total) {
 
 // proceed button
 $(document).ready(function () {
-  // $("button.proceed").click(function(){
-  //   $("button.proceed").hide();
-  //   $("#information").hide();
-  //   $("div.choice").slideDown(1000);
-  // });
+  $("button.proceed").click(function () {
+    $("button.proceed").hide();
+    $("#information").hide();
+    $("div.choice").slideDown(1000);
+  });
   $("button.proceed").click(function (event) {
     let pname = $(".name option:selected").val();
     let psize = $("#size option:selected").val();
@@ -164,7 +164,7 @@ $(document).ready(function () {
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
-      let deliceryamount = checkoutTotal + 150;
+      let deliceryamount = checkoutTotal + 200;
       console.log("You will pay sh. " + deliceryamount + " on delivery");
       $("#totalbill").append("Your bill plus delivery fee is: " + deliceryamount);
     });
@@ -176,7 +176,7 @@ $(document).ready(function () {
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount = checkoutTotal + 150;
+      let deliceryamount = checkoutTotal + 200;
       console.log("Final Bill is: " + deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
