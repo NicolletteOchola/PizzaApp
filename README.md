@@ -25,17 +25,18 @@ From the menu, see the different types of pizza by hovering over the images.
 Make your order by selecting the options provided on the form.
 Click on the Place your order link to lead to the order form
 <img src = "images/4.png">
-- Input :
+
+ - Input :
 User puts in their preffered choices from the options provided
 Select a delivery option if it's the users preference to have the pizza delivered
 <img src = "images/5.png">
+
 - Output :
 Have a summmary of the order and the total price to be paid
 <img src = "images/6.png">
 
 ## KNOWN BUGS 
 The User can only order one Pizza at a time, when the add pizza option is selected, the page reloads.
-At the moment theres no known bugs, please feel free tolet me know if you find any.
 ## LINK TO LIVE SITE 
 https://nicolletteochola.github.io/PizzaApp/
 
