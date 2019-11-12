@@ -164,9 +164,9 @@ $(document).ready(function () {
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
-      let deliceryamount = checkoutTotal + 200;
+      let deliveryamount = checkoutTotal + 200;
       console.log("You will pay sh. " + deliceryamount + " on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: " + deliceryamount);
+      $("#totalbill").append("Your bill plus delivery fee is: " + deliveryamount);
     });
 
     // when one clicks place order button
@@ -176,15 +176,15 @@ $(document).ready(function () {
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount = checkoutTotal + 200;
-      console.log("Final Bill is: " + deliceryamount);
+      let deliveryamount = checkoutTotal + 200;
+      console.log("Final Bill is: " + deliveryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount);
+        $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount + " Thank you for choosing Muy Bien Pizza!");
         $("#totalbill").hide();
         $("#finalmessage").slideDown(1200);
       }
