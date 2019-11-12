@@ -16,13 +16,16 @@ Nicollette Ochola
 - Open the folder, index.html on your browser 
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT
-- Behaviour 
-Choose from the landing page if you want to make an order or see the menu first
-From the menu, see the different types of pizza by h
+- Behaviour : 
+Choose from the landing page if you want to make an order or see the menu first.
+From the menu, see the different types of pizza by hovering over the images.
 Make your order by selecting the options provided on the form.
-- Input 
+Click on the Place your order link to lead to the order form
+- Input :
 User puts in their preffered choices from the options provided
-
+Select a delivery option if it's the users preference to have the pizza delivered
+- Output :
+Have a summmary of the order and the total price to be paid
 ## KNOWN BUGS 
 At the moment theres no known bugs, please feel free tolet me know if you find any.
 ## LINK TO LIVE SITE 
